@@ -376,8 +376,8 @@ header {
   margin-bottom: 3em; }
   .services .icon {
     float: left;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: table;
     text-align: center;
     background: whitesmoke;
@@ -385,6 +385,11 @@ header {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
+    .services .icon img{
+      margin: 17px;
+      width: 66px;
+      height: 66px;
+    }
     .services .icon i {
       display: table-cell;
       vertical-align: middle;
@@ -1193,3 +1198,48 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+.text-intro{
+  text-align: justify;
+  font-size: 18px;
+}
+
+figure.effect-ming figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid #2e6da4;
+  box-shadow: 0 0 0 45px rgba(51, 122, 183, 0.2);
+  content: '';
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.4,1.4,1);
+  transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming:hover figcaption::before{
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+/* Common style */
+.grid{
+  padding-top:7em;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.grid figure img{
+  width: 100%;
+  height: auto;
+}
