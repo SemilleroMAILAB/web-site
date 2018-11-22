@@ -23,6 +23,10 @@
     }
 }
 .material-card {
+    font-family: "Inconsolata", monospace; 
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 100;
     position: relative;
     height: 0;
     padding-bottom: calc(100% - 16px);
